@@ -7,3 +7,9 @@ def handler(event, context):
         pass
     except Exception as e:
         raise e
+
+
+try:
+    handler(None, None)
+except Exception as e:
+    print(e)
